@@ -30,7 +30,7 @@ public class ImageData {
     private String type;
 
     @Lob	
-    @Column(name = "image_data", length = 1000)
+    @Column(name = "image_data", columnDefinition = "LONGBLOB")
     private byte[] imageData;
 
 	public String getName() {
